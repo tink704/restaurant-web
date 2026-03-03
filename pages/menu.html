@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | damr Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>damr</span>
+            </div>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="#" class="active">Menu</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="cart-trigger">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="item-count-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="container">
+            <div class="section-header" style="padding-top: 50px;">
+                <h2>Our Artisanal Selection</h2>
+                <div class="menu-tabs">
+                    <button class="tab-btn" id="btn-food">
+                        <i class="fas fa-utensils"></i> Food
+                    </button>
+                    <button class="tab-btn active" id="btn-drink">
+                        <i class="fas fa-mug-hot"></i> Drinks
+                    </button>
+                    
+                </div>
+            </div>
+            
+            <div id="product-list" class="product-grid">
+                </div>
+
+            <div class="cart-bar" id="cart-summary-bar">
+                <div class="cart-info">
+                    <p>Items: <strong id="item-count">0</strong></p>
+                    <p>Total: <strong id="total-bill">0.00</strong> $M</p>
+                </div>
+                <button id="checkout-btn" class="btn btn-accent">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+</html>

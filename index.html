@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damr | Premium Coffee Roasters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <div class="logo-img-wrapper">
+                    <img src="images/damr.jpg" alt="damr logo" onerror="this.src='https://placehold.co/40x40?text=D'">
+                </div>
+                <span>damr</span>
+            </div>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="pages/menu.html">Menu</a>
+                <a href="#blog">Blog</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="cart-trigger">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="item-count-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="tagline">Artisanal Coffee Roasters</span>
+                    <h1>Better Mornings <br><span class="accent">Start Here.</span></h1>
+                    <p>Experience the rich aroma and exquisite taste of micro-roasted beans delivered straight to your cup.</p>
+                    <div class="hero-btns">
+                        <a href="pages/menu.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-blob">
+                        <img src="images/p11.jpg" alt="Specialty Coffee">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discovery-section">
+            <div class="container discovery-grid">
+                <div class="discovery-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1500" alt="Freshly Brewed Coffee">
+                </div>
+                <div class="discovery-content">
+                    <span class="tagline">The damr Experience</span>
+                    <h2>Roasted in Small Batches, Served with Big Heart</h2>
+                    <p>Every bean in our roastery goes through a rigorous selection process. We believe that better mornings aren't just about caffeine—they're about the ritual of a perfect pour.</p>
+                    <a href="pages/menu.html" class="btn btn-primary">Explore Our Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Signature Menu</h2>
+                    <p>Explore our most-loved drinks and seasonal specials.</p>
+                    <a href="pages/menu.html" class="view-all-link">View Full Menu <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div id="product-list" class="product-grid">
+                    </div>
+
+                <div class="cart-bar" id="cart-summary-bar">
+                    <div class="cart-info">
+                        <p>Items: <strong id="item-count">0</strong></p>
+                        <p>Total: <strong id="total-bill">0.00</strong> $M</p>
+                    </div>
+                    <button id="checkout-btn" class="btn btn-accent">Checkout <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>damr</h3>
+                <p>Sustainable coffee, crafted with passion and served with a smile. Join our community of coffee lovers.</p>
+                <div class="socials">
+                    <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="tk"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="pages/menu.html">Menu</a>
+                <a href="#">Locations</a>
+                <a href="#">Wholesale</a>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 damr Coffee Roasters. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
